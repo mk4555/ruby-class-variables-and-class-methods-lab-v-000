@@ -6,7 +6,7 @@ class Song
   attr_accessor :name, :artist, :genre
 
   def initialize(name, artist, genre)
-    @@count ++
+    @@count++
     @name = name
     @artist = artist
     @genre = genre
@@ -37,4 +37,13 @@ class Song
     count
   end
 
+  def artist_count
+    count = {}
+    @@artists.each do |artist|
+      if count.has_key?(artist)
+        count[artist]++
+      else count[artist] = 1
+      end
+    end
+    count
 end
