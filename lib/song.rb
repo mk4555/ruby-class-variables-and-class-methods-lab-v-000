@@ -12,8 +12,8 @@ class Song
     @genre = genre
   end
 
-  def count
-    return @@count
+  def self.count
+    @@count
   end
 
   def genres
