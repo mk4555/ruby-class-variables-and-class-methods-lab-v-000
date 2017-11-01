@@ -26,13 +26,13 @@ class Song
     @@genres.uniq
   end
 
-  def genre_count
+  def self.genre_count
     count = {}
     
     count
   end
 
-  def artist_count
+  def self.artist_count
     count = {}
     @@artists.each do |artist|
       if count.has_key?(artist)
