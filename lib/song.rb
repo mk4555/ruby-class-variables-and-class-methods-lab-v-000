@@ -10,11 +10,11 @@ class Song
   end
 
   def count
-    @@count
+    @count
   end
 
   def genres
-    @@genres
+    @genres
   end
 
 end
