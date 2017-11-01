@@ -42,10 +42,11 @@ class Song
     @@artists.each do |artist|
       if count.has_key?(artist)
         count[artist]++
-      else 
+      else
         count[artist] = 1
       end
     end
     count
   end
+  
 end
